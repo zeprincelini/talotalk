@@ -24,7 +24,7 @@ const Posts = ({ data }: Props) => {
           )
           .map((item, i: number) => (
             <Card
-              className="shadow-sm col-span-1 md:col-span-4 bg-[#EAF2FE]"
+              className="shadow-sm col-span-12 md:col-span-4 bg-[#EAF2FE]"
               key={i}
             >
               <div className="grid gap-2">
@@ -38,8 +38,8 @@ const Posts = ({ data }: Props) => {
             </Card>
           ))
       ) : (
-        <div className="col-span-12 place-content-center mx-8">
-          <p className="text-blue-400">No posts added!</p>
+        <div className="col-span-12 mx-8">
+          <p className="text-blue-400 text-center">No posts added!</p>
         </div>
       )}
     </>
